@@ -1,6 +1,86 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Структура доменного имени</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #fff;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Структура доменного имени</h1>
+        <p><strong>Дата публикации:</strong> 12 января 2026 года</p>
+    </header>
+
+    <main>
+        <p>
+            Доменное имя — это человекочитаемый адрес сайта в интернете, например:
+            <code>github.com</code> или <code>31014000qwerty-jpg.github.io</code>.
+            Оно состоит из нескольких уровней (или частей), иерархически организованных справа налево.
+        </p>
+
+        <h2>Уровни доменного имени</h2>
+        <p>Рассмотрим пример домена: <code>31014000qwerty-jpg.github.io</code></p>
+
+        <ul>
+            <li><strong>Корневой домен (root domain)</strong> — обозначается точкой (<code>.</code>) в конце полного доменного имени. Обычно не отображается, но технически существует.</li>
+            <li><strong>Домен верхнего уровня (TLD — Top-Level Domain)</strong>: <code>io</code> — указывает на категорию или географическое происхождение (в данном случае — территория Британских Индийских океанических территорий, но часто используется как общедоступный TLD).</li>
+            <li><strong>Домен второго уровня (SLD — Second-Level Domain)</strong>: <code>github</code> — основное имя, зарегистрированное организацией или пользователем.</li>
+            <li><strong>Поддомен (Subdomain)</strong>: <code>31014000qwerty-jpg</code> — дополнительный уровень, созданный владельцем домена второго уровня для организации контента или сервисов.</li>
+        </ul>
+
+        <p>
+            Таким образом, полное доменное имя читается <em>справа налево</em> по уровням иерархии:
+            <br>
+            <code>. → io → github → 31014000qwerty-jpg</code>
+        </p>
+
+        <p>
+            В случае GitHub Pages, когда вы создаёте репозиторий с именем <code>&lt;username&gt;.github.io</code>,
+            GitHub автоматически предоставляет вам поддомен вида <code>&lt;username&gt;.github.io</code>,
+            где:
+        </p>
+        <ul>
+            <li><code>io</code> — TLD,</li>
+            <li><code>github</code> — SLD,</li>
+            <li><code>31014000qwerty-jpg</code> — ваш поддомен (имя пользователя).</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>© 2026 | Страница размещена в репозитории: 
+            <a href="https://github.com/31014000qwerty-jpg/index.html" target="_blank">
+                github.com/31014000qwerty-jpg
+            </a>
+        </p>
+    </footer>
+</body>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой репозиторий</title>
